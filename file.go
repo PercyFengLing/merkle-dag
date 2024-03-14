@@ -14,12 +14,14 @@ type File interface {
 	Node
 
 	Bytes() []byte
+	Name() string
 }
 
 type Dir interface {
 	Node
 
 	It() DirIterator
+	Name() string
 }
 
 type DirIterator interface {
